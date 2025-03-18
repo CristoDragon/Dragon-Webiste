@@ -8,14 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>Runsheng Xu</h1>
+        <h1>Runsheng(Dragon) Xu</h1>
         <p>ex-Software Developer@MSA | MISM@CMU | Business Intelligence Specialization</p>
         <!-- An HTML element that represents a navigation section -->
         <nav>
             <!-- Use dynamic URL generation based on function names in app.py -->
             <a href="{{ url_for('home') }}">Home</a>
+            <!-- 
+            <a href="{{ url_for('cv') }}">CV</a> 
+            -->
             <a href="{{ url_for('projects') }}">Projects</a>
-            <a href="{{ url_for('contact') }}">Contact</a>
         </nav>
     </header>
 

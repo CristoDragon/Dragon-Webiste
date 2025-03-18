@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}CV - My Portfolio{% endblock %}
+
+{% block content %}
+<section>
+    <main>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: edmundrain1@gmail.com</p>
+            <p>Phone: 614-294-9530</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/dragonxu" target="_blank">Dragon's LinkedIn</a></p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Carnegie Mellon University</strong> | M.S. in Information System Management, specialized in Business Intelligence (GPA: 3.94/4.0) | 08/2023 - 12/2024</p>
+            <p><strong>The Ohio State University</strong> | B.A. in Computer and Information Science, minored in Economics (GPA: 3.77/4.0) | 08/2018 - 05/2022</p>
+        </section>
+        <section id="work experience">
+            <h2>Work Experience</h2>
+            <article>
+                <p><strong>Pennsylvania Compensation Rating Bureau | Data Engineer Intern (Remote)</strong> | Pittsburgh, PA | 09/2024 - 12/2024</p>
+                <ul>
+                    <li>Developed scalable ETL pipelines using SQL and Python, efficiently ingesting and transforming over 10 million records to integrate internal and external datasets without common primary keys, delivering a 32.8% matching accuracy.</li>
+                    <li>Integrated Soundex and Rapidfuzz algorithms into 5 decision tree structures with various threshold, feature engineered new columns to capturing fuzzy string matches, increasing the baseline matching accuracy from 12% to 25% after deployment.</li>
+                    <li>Implemented severity-based logging mechanisms in Python for pipeline monitoring, generating log files containing pipeline checkpoint messages and debug information for custom error classes, significantly improving team debugging efficiency.</li>
+                    <li>Refactored 5000+ lines of experimental Python notebook code into production-level Git repository, modularizing the pipeline into separate Python files for data collection, data cleaning, model building, model evaluation, and model deployment.</li>
+                    <li>Developed a robust testing framework combining Pytest and dbt tests, with Pytest for unit and system tests to ensure consistent results from Python functions, and dbt tests for schema checks in the database ensuring data quality.</li>
+                    <li>Optimized ETL pipeline by eliminating inefficient loops and performance bottlenecks, including implementing numpy vectorization and Dask parallel computing, significantly reducing total execution time from 125 days to 10 hours.</li>
+                    <li>Automated creating visualization dashboards with Python for 10+ model evaluation metric visualizations, removing the manual process of extracting metrics from log files after each run, enabling faster decision-making.</li>
+                    <li>Managed project execution using Azure DevOps and Smartsheet, breaking down complex problems into smaller, parallel tasks, optimizing resource allocation within the given time frame and accelerating delivery cycle.</li>
+                    <li>Bridged the gap between technical and non-technical teams by translating model trade offs and performance concepts into actionable business insights in weekly stakeholder meetings, ensuring the ETL pipeline met both operational and strategic goals.</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>Management Science Associates | Software Developer Intern (On site)</strong> | Pittsburgh, PA | 05/2024 - 12/2024</p>
+                <ul>
+                    <li>Completed 15 reporting automation projects in Python and SQL, transforming manual reporting processes into fully automated workflows scheduled weekly and monthly for execution, reducing the traditional delivery time by more than 50%.</li>
+                    <li>Managed the entire software development life cycle from stakeholder meetings, requirement gathering, data extraction (SQL), transformation (Python), deployment (Azure DevOps), and scheduling (Control-M).</li>
+                    <li>Converted legacy reporting systems by transforming poorly documented VBA macros, SAS scripts, and MySQL code into scalable Python-based workflows, following software engineering and OOP best practices.</li>
+                    <li>Optimized SQL queries for big data in Oracle data marts by creating clustered index, common table expressions (CTE), and parallel computing statements, reducing query execution time by 25% on average to handle increasing data load.</li>
+                    <li>Automated SQL objects creation and database administration tasks using Python to dynamically update over 10,000 lines of anonymous Oracle PL/SQL blocks, significantly reducing manual efforts for Database Administrators as new clients coming.</li>
+                    <li>Created and maintained over 50 reusable Python utility functions for common ETL operations, such as customized context managers for database connections, significantly improving team’s code modularity and efficiency.</li>
+                    <li>Scheduled and monitored the execution of reporting workflows using Control-M, including configuring command line parameter, input and output file locations, and transitioning from testing to production server.</li>
+                    <li>Automated the CI/CD process for Python projects in Azure DevOps Pipelines, configuring multi-stage pipelines using YAML to streamline build, test, and deployment workflows, and creating releases for subsequent fixes.</li>
+                    <li>Collaborated with cross functional teams in an agile environment, including data scientists and quality assurance, to improve existing data infrastructure, and translate project requirements to technical documentation (README files).</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>Carnegie Mellon University | Teaching Assistant (On site)</strong> | Pittsburgh, PA | 01/2024 - 10/2024</p>
+                <ul>
+                    <li>Assisted professors in teaching 3 courses: Advanced Relational Database Management, Professional Writing, and Strategic Presentation Skills, grading students homework and holding weekly office hours to answer questions.</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>Touchdown International | Data Analyst (Hybrid)</strong> | Columbus, OH | 06/2022 - 04/2023</p>
+                <ul>
+                    <li>Created web-based interactive data visualization dashboards using Altair (python package) and Streamlit, analyzing enterprise financial datasets and customer data from CRM to provide data-driven insights and support B2C marketing strategies.</li>
+                </ul>
+            </article>
+            <article>
+                <p><strong>NIO Inc. (Leading EV company) | Data Analyst Intern (On site)</strong> | Jinan, Shandong | 09/2021 - 12/2021</p>
+                <ul>
+                    <li>Implemented decision-tree-based and neural networks classification in Python to predict customer purchasing willingness, significantly reducing ineffective marketing phone calls for sales department by 20% and improving operational efficiency.</li>
+                    <li>Created visualization dashboards using ArcGIS pro and Tableau to visualize electric vehicle sales data across the country.</li>
+                    <li>Optimized transformation process of ETL workflows in NIO Apollo data warehouse to support daily KPI reports generation.</li>
+                </ul>
+            </article>
+        </section>
+        <section id="skills">
+            <h2>Skills & Achievements</h2>
+            <ul>
+                <li>Language & Tools: Java, Python, R, MySQL, Oracle PL-SQL, NoSQL, SAS, Excel VBA Macros, Linux, GUI, Oracle SQL Developer, Azure DevOps, Git, Hadoop, Airflow, SQL Server, GCP, Big Query, Snowflake, Kubernetes, AWS, Tableau, DB2</li>
+                <li>Award: Heinz Highest Distinction (Carnegie Mellon University), Dean’s List (Ohio State University)</li>
+            </ul>
+        </section>
+    </main>
+</section>
+{% endblock %}
